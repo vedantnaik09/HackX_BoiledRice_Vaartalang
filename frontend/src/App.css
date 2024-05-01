@@ -1,0 +1,131 @@
+
+.login-container{
+  background: rgba(0, 0, 0,0.5);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(1px);
+--webkit-backdrop-filter: blur(30px);
+border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+/* App.css */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 41rem; /* Adjust as needed */
+    height: fit-content;
+    position: relative;
+  }
+  
+  /* Blurred effect */
+  .carousel-container::before,
+  .carousel-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; /* Adjusted width */
+    background: rgba(255, 255, 255, 0); /* Adjust as needed */
+    backdrop-filter: blur(10px); /* Adjust blur amount as needed */
+    z-index: -1; /* Set z-index to place behind the text content */
+  }
+  
+  .carousel-container::before {
+    left: 0;
+  }
+  
+  .carousel-container::after {
+    right: 0;
+  }
+  
+ 
+  
+  
+
+  .animate-gradient-text {
+	max-width: 50rem;
+    text-align: center;
+}
+
+.animate-gradient-text {
+	background-image: linear-gradient(120deg, #fcf8ff, #cf00e2, #f2ecff);
+	background-size: 200%;
+	-webkit-text-fill-color: transparent;
+	/* -webkit-background-clip: text; */
+	/* background-clip: text; */
+	animation: animated-gradient 5s ease-in-out infinite;
+}
+
+/* Простенька Keyframe анімація */
+@keyframes animated-gradient {
+	0%,
+	100% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.icons {
+    border: none; /* Remove the border if you have one */
+    border-radius: 50%; /* Set the element to be a circle */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Base shadow */
+    /* Add subtle inner shadow for depth (optional) */
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .line {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #320B32;
+    overflow: hidden;
+  }
+  
+  .highlight {
+    position: absolute;
+    top: 0;
+    left: 100%; /* Initially position the highlight outside the line */
+    width: 25px; /* Adjust the width of the highlight as needed */
+    border-radius: 30px;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.6; /* Adjust the opacity to make it shiny */
+    transition: box-shadow 0.3s ease; /* Add transition effect for smoothness */
+  }
+  
+  .highlight.shiny {
+    box-shadow: 0 0 20px 17px rgba(255, 255, 255, 0.8); /* Add a glowing effect */
+  }
+  
+  .icons {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .icons:hover {
+    text-decoration: underline;
+  }
+  
+  .icons:focus {
+    outline: none;
+  }
+  
+  .animate .highlight {
+    animation: moveHighlight 2s linear infinite; /* Apply animation only when clicked */
+  }
+  
+  @keyframes moveHighlight {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -10%; /* Move the highlight to the left edge of the line */
+    }
+  }
+  
+  

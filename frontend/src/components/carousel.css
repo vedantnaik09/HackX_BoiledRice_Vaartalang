@@ -1,0 +1,14 @@
+.carousel-image {
+    animation: glow 1s ease-in-out infinite alternate;
+    color: blue;
+    /* -webkit-filter: drop-shadow(2px 2px 2px black); */
+  }
+  @keyframes glow {
+    from {
+      -webkit-filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+    }
+  
+    to {
+      -webkit-filter: drop-shadow(0 0 20px rgb(0, 3, 173));
+    }
+  }

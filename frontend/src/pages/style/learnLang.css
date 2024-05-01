@@ -1,0 +1,18 @@
+.gradient-text {
+  font-family: Arial, sans-serif; /* Specify your preferred font */
+  background-image: linear-gradient(to right, #ffa0eb 0%, #4349c5 100%);
+  padding-bottom: 10px;
+  -webkit-background-clip: text; /* Safari and Chrome */
+  background-clip: text; /* Standard browsers */
+  color: transparent; /* Make the text color transparent to show the gradient */
+}
+
+.btns:hover {
+  border-radius: 20rem;
+  transition: border-radius 0.5s ease-in;
+}
+.ai-message, .user-message{
+    width: 70vw;
+    color: white;
+    font-size: 40px;
+}
